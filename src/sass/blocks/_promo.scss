@@ -1,0 +1,39 @@
+.promo {
+    background: url('../../img/rectangle_10_166.jpg') no-repeat 50%/cover;
+    padding: 40px 0px 185px 0px;
+    height: 700px;
+    position: relative;
+    &__header {
+        display: grid;
+        grid-template-columns: 140px 566px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav {
+        padding-left: 25px;
+        max-width: 566px;
+        ul {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(40px, auto));
+            li {
+                list-style-type: none;
+                a {
+                    font-size: 13px;
+                    line-height: 26px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}

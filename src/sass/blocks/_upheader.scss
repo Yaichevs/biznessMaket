@@ -1,0 +1,29 @@
+.upheader {
+    max-height: 100px;
+    &__countries {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(190px, auto));
+        padding: 20px 0 20px 0;
+        column-gap: 3px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 28px auto;
+        column-gap: 10px;
+        &-descr {
+            text-align: left;
+        }
+        &-nameC {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+            color: #242424;
+        }
+        &-phone, &-addr{
+            font-size: 12px;
+            font-weight: 300;
+            color: #242424;
+            line-height: 18px;
+        }
+    }
+}
