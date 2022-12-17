@@ -13,5 +13,12 @@
     margin: 0 auto;
 }
 
+.cont-promo {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
 @import 'blocks/upheader';
 @import 'blocks/promo';
