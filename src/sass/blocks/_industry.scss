@@ -1,0 +1,67 @@
+.industry {
+    height: 890px;
+    padding: 72px 0 61px 0;
+    background: url('../../img/indImg.jpg') no-repeat 50%/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__wrapp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 10;
+        position: relative;
+    }
+    &__head {
+        font-weight: 900;
+        font-size: 30px;
+        color: #fff;
+        line-height: 36px;
+        text-align: center;
+    }
+    &__tabs {
+        width: 843px;
+        height: 64px;
+        border: 1px solid #ffffff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 23px auto 0px auto;
+        
+        list-style-type: none;
+        padding: 0px 18px 0px 17px;
+    }
+    &__tab {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #ffffff;
+        border-right: 1px solid #fff;
+        padding-right: 20px;
+        &_active {
+            font-weight: 700;
+            color: $main-color;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 17px;
+                height: 22px;
+                left: 50%;
+                top: 50%;
+                background: url('../../icons/ruka.png');
+            }
+        }
+        &:last-child {
+            border-right: none
+        }
+    }
+    &__slider {
+        margin: 35px auto 0px auto;
+        display: grid;
+        grid-template-columns: 18px 695px 18px;
+        column-gap: 50px;
+        align-items: center;
+    }
+}
