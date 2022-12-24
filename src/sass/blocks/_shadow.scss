@@ -1,0 +1,25 @@
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    &_reas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 156px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        p {
+            text-align: center;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 26px;
+            color: #fff;
+        }
+    }
+}

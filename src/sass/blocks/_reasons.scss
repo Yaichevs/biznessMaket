@@ -1,0 +1,28 @@
+.reasons {
+    padding: 74px 0 80px 0;
+    height: 1340px;
+    &__head {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+        color: #393939;
+        text-align: center;
+    }
+    &__wrapp {
+        display: grid;
+        margin-top: 42px;
+        grid-template-columns: repeat(2, 570px);
+        grid-template-rows: minmax(355px, auto);
+        grid-auto-rows: minmax(355px, auto);
+    }
+    &__item {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

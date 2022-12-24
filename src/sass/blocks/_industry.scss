@@ -3,9 +3,7 @@
     padding: 72px 0 61px 0;
     background: url('../../img/indImg.jpg') no-repeat 50%/cover;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     &__wrapp {
         display: flex;
         flex-direction: column;
@@ -25,10 +23,10 @@
         height: 64px;
         border: 1px solid #ffffff;
         display: flex;
+        border-radius: 10px;
         justify-content: space-around;
         align-items: center;
-        margin: 23px auto 0px auto;
-        
+        margin: 23px auto 0px auto; 
         list-style-type: none;
         padding: 0px 18px 0px 17px;
     }
@@ -37,31 +35,44 @@
         line-height: 25px;
         font-weight: 400;
         color: #ffffff;
-        border-right: 1px solid #fff;
-        padding-right: 20px;
+        padding-right: 25px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 50px;
+            background-color: #fff;      
+            top: -50%;
+            left: 100%;
+        }
+        &:last-child {
+            &::before {
+                content: '';
+                width: 0px;
+                height: 0px;
+            }
+        }
         &_active {
             font-weight: 700;
             color: $main-color;
             position: relative;
-            &::before {
+            &::after {
                 content: '';
                 position: absolute;
                 width: 17px;
                 height: 22px;
-                left: 50%;
-                top: 50%;
                 background: url('../../icons/ruka.png');
+                top: 50%;
+                right: 32%;
             }
-        }
-        &:last-child {
-            border-right: none
         }
     }
     &__slider {
-        margin: 35px auto 0px auto;
+        margin: 70px auto 0px auto;
         display: grid;
         grid-template-columns: 18px 695px 18px;
-        column-gap: 50px;
+        column-gap: 60px;
         align-items: center;
     }
-}
+ }
