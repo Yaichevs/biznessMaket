@@ -1,0 +1,20 @@
+.btn {
+    width: 240px;
+    height: 60px;
+    background-color: #00c2f0;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.07);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    &_promo {
+        margin-top: 30px;
+    }
+    &_start {
+        display: block;
+        margin: 30px auto 0px auto;
+    }
+}
