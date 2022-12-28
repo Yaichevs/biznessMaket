@@ -71,8 +71,20 @@
     &__slider {
         margin: 70px auto 0px auto;
         display: grid;
-        grid-template-columns: 18px 695px 18px;
-        column-gap: 60px;
+        grid-template-columns: 18px 947px 18px;
+        column-gap: 30px;
         align-items: center;
+    }
+    &__wrappImg {
+        width: 947px;
+        position: relative;
+        height: 560px;
+        background: url('../../img/macbook_air_290.png');
+        display: flex;
+        justify-content: center;
+        img {
+           position:absolute; 
+           bottom: 63px;
+        }
     }
  }
