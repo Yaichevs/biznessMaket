@@ -10,6 +10,13 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+    transition: all 0.3s;
+    &:hover {
+        filter: brightness(115%);
+    }
+    &:active {
+        filter: brightness(80%);
+    }
     &_promo {
         margin-top: 30px;
     }
