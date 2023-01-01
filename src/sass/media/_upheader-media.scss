@@ -1,0 +1,65 @@
+@media (max-width: 1200px) {
+   .upheader {
+        height: auto;
+        &__countries {
+            grid-template-columns: repeat(5, minmax(190px, auto));
+            padding: 17px 0 17px 0;
+            column-gap: 2px;
+        }
+        &__item {
+            column-gap: 9px;
+            &-descr {
+                text-align: left;
+            }
+            &-phone, &-addr{
+                line-height: 15px;
+                font-size: 11px;
+            }
+        }
+   }
+}
+
+@media (max-width: 992px) {
+    .upheader {
+        padding-bottom: 50px;
+        &__countries {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &__item {
+            &-phone, &-addr{
+                line-height: 14px;
+                font-size: 11px;
+            }
+        }
+   }
+}
+
+@media (max-width: 768px) {
+    .upheader {
+        &__countries { 
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .upheader {
+        height: auto;
+        padding-bottom: 105px;
+        &__countries {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 10px;
+        }
+        &__item {
+            &-nameC {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            &-phone, &-addr{
+                line-height: 12px;
+                font-size: 10px;
+            }
+        }
+   }
+}
