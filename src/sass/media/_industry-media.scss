@@ -59,13 +59,13 @@
 @media (max-width: 576px) {
     .industry {
         height: 600px;
-        padding: 30px 0 30px 0;
+        padding: 30px 0px;
         &__head {
             font-size: 18px;
             line-height: 20px;
         }
         &__tabs {
-            width: calc(100% - 20px);
+            width: calc(100% - 5px);
             padding: 0;
         }
         &__tab {
@@ -79,12 +79,13 @@
             }
         }
         &__slider {
-            grid-template-rows: 212px 100px;
+            grid-template-rows: 252px 100px;
             row-gap: 0px;
             margin-top: 30px;
         }
         .mainImg {
-            width: calc(100% - 20px);
+            width: 90%;
+            margin: 0 auto;
         }
     }
 }

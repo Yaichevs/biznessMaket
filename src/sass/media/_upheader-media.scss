@@ -1,6 +1,7 @@
 @media (max-width: 1200px) {
    .upheader {
         height: auto;
+        padding: 0 5px;
         &__countries {
             grid-template-columns: repeat(5, minmax(190px, auto));
             padding: 17px 0 17px 0;

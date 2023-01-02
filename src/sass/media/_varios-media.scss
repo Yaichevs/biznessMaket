@@ -1,0 +1,96 @@
+@media (max-width: 1200px) {
+    .data {
+        &__wrapp {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, minmax(500px, auto));
+            row-gap: 20px;
+        }
+        &__head {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .data {
+        &__text1 {
+            left: 0;
+            right: 5%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .data {
+        &__wrapp {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, minmax(450px, auto));
+            row-gap: 20px;
+            &-header, &-descr {
+                text-align: center;
+            }
+            &-header {
+                &_right {
+                    &::before {
+                        right: 5%; 
+                    }
+                }
+            }
+        }
+        &__head {
+            margin-top: 30px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__text1 {
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .data {
+        &__wrapp {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, minmax(400px, auto));
+            row-gap: 20px;
+            &-header {
+                font-size: 22px;
+                line-height: 20px;
+                text-align: center;
+                &_left {
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 167px;
+                        height: 167px;
+                        background-color: rgb(0, 194, 240, 0.3);
+                        top: -30px;
+                        left: 5%;
+                        z-index: -1;
+                    }
+                }      
+                &::before {
+                    width: 140px;
+                    height: 140px;
+                    right: 5%;
+                }
+            }
+            &-descr {
+                margin-top: 15px;
+                text-align: center;
+                font-size: 15px;
+            }
+        }
+        &__head {
+            margin-top: 30px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__text1, &__text2 {
+            width: 100%;
+            text-align: center;
+            margin-left: 0px;
+        }
+    }
+}
