@@ -20,16 +20,18 @@
             text-transform: uppercase;
             color: #ffffff;    
             position: relative;
-            &::before {
-                content: '';
-                position: absolute;
-                width: 167px;
-                height: 167px;
-                background-color: rgb(0, 194, 240, 0.3);
-                top: -30px;
-                right: -4%;
-                z-index: -1;
-            } 
+            &_right {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 167px;
+                    height: 167px;
+                    background-color: rgb(0, 194, 240, 0.3);
+                    top: -30px;
+                    right: -4%;
+                    z-index: -1;
+                } 
+            }
             &_left {
                 &::before {
                     content: '';
@@ -68,7 +70,7 @@
         z-index: 12;
         position: absolute;
         top: 50%;
-        left: 5%;
+        margin-right: 80px;
         transform: translateY(-50%);
     }
     &__text2 {
